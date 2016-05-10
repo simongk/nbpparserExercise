@@ -17,9 +17,9 @@ public class MainClass {
         String currency = args[0];
         //end of Input data
         
-        LoadCurrency loadCurrency = new LoadCurrency(fromDate, toDate, currency);
-        String mean = Statistics.MeanofbuyingRates(LoadCurrency.currencyList);
-        String standardDeviation = Statistics.StandardDeviationofsellingRates(LoadCurrency.currencyList);
+        LoadCurrency currency1 = new LoadCurrency(fromDate, toDate, currency);
+        String mean = Statistics.MeanofbuyingRates(currency1.currencyList);
+        String standardDeviation = Statistics.StandardDeviationofsellingRates(currency1.currencyList);
         System.out.println(mean + " " + standardDeviation);
 
     } //end of main

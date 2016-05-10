@@ -29,7 +29,7 @@ public class LoadCurrency {
     private static Document xmlDoc = null;
     private static DocumentBuilder builder = null;
     private static DocumentBuilderFactory factory = null;
-    static ArrayList< Currency> currencyList = null;
+    ArrayList< Currency> currencyList = null;
     private String fromDate;
     private String toDate;
     private String currencyCode;
